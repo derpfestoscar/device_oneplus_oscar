@@ -12,9 +12,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/oscar/device.mk)
 
 # Inherit some common Derpfest stuff.
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+$(call inherit-product, vendor/cipher/config/common_full_phone.mk)
 
-PRODUCT_NAME := derp_oscar
+TARGET_BOOT_ANIMATION_RES := 1080
+# Faceunlock Support
+TARGET_FACE_UNLOCK_SUPPORTED := true
+# Maintainer
+CIPHER_MAINTAINER := phhhsi
+# GMS
+CIPHER_GAPPS := true
+# Battery Info
+CIPHER_BATTERY := 5000
+# Screen Size
+CIPHER_SCREEN :=  6.59
+# Enable Blurs
+CIPHER_BLUR := true
+
+PRODUCT_NAME := cipher_oscar
 PRODUCT_DEVICE := oscar
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus

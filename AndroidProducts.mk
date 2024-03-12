@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_oscar.mk
+    $(LOCAL_DIR)/cipher_oscar.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_oscar-user \
-    derp_oscar-userdebug \
-    derp_oscar-eng
+    cipher_oscar-user \
+    cipher_oscar-userdebug \
+    cipher_oscar-eng
