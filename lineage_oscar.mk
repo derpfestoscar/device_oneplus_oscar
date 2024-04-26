@@ -12,9 +12,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/oscar/device.mk)
 
 # Inherit some common Derpfest stuff.
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := derp_oscar
+# RisingOS variables
+RISING_MAINTAINER := phhgsi
+
+# Gapps Config
+WITH_GMS := true
+TARGET_CORE_GMS := true
+TARGET_GAPPS_ARCH := arm64
+
+PRODUCT_NAME := lineage_oscar
 PRODUCT_DEVICE := oscar
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
